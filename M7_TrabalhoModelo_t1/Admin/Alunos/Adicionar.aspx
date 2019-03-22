@@ -31,10 +31,12 @@
             Código Postal:
             <asp:TextBox MaxLength="8" Text='<%# Bind("cp") %>' runat="server" ID="cpTextBox" />
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Tem de indicar um código postal." ControlToValidate="cpTextBox" CssClass="-danger" Display="Dynamic" EnableClientScript="False"></asp:RequiredFieldValidator>
+            <asp:CustomValidator OnServerValidate="CustomValidator1_ServerValidate" ID="CustomValidator1" runat="server" ErrorMessage="O código postal não é válido. Deve ser no formato seguinte ####-###" ControlToValidate="cpTextBox" CssClass="alert-danger" Display="Dynamic" EnableClientScript="False"></asp:CustomValidator>
             <br />
             Data Nascimento:
             <asp:TextBox TextMode="Date" Text='<%# Bind("data_nascimento") %>' runat="server" ID="data_nascimentoTextBox" />
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Tem de indicar uma data de nascimento." ControlToValidate="data_nascimentoTextBox" CssClass="alert-danger" Display="Dynamic" EnableClientScript="False"></asp:RequiredFieldValidator>
+            <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="A data indicada não é válida. Deve estar entre 1950 e 2050." ControlToValidate="data_nascimentoTextBox" CssClass="alert-danger" EnableClientScript="False" Type="Date" MaximumValue="31-12-2050" MinimumValue="01-01-1950"></asp:RangeValidator>
             <br />
             Género:
             <asp:DropDownList ID="DropDownList1" runat="server" SelectedValue='<%# Bind("genero") %>'>
@@ -65,7 +67,7 @@
             <asp:Parameter Name="nome"></asp:Parameter>
             <asp:Parameter Name="morada"></asp:Parameter>
             <asp:Parameter Name="cp"></asp:Parameter>
-            <asp:Parameter Name="data_nascimento"></asp:Parameter>
+            <asp:Parameter Name="data_nascimento" DbType="Date"></asp:Parameter>
             <asp:Parameter Name="genero"></asp:Parameter>
         </InsertParameters>
     </asp:SqlDataSource>

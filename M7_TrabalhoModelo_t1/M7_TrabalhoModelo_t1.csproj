@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Alunos\Adicionar.aspx" />
+    <Content Include="Admin\Disciplinas\Adicionar.aspx" />
     <Content Include="App_Data\bd.mdf" />
     <Content Include="App_Data\bd_log.ldf">
       <DependentUpon>bd.mdf</DependentUpon>
@@ -92,6 +93,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\Alunos\Adicionar.aspx.designer.cs">
+      <DependentUpon>Adicionar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Disciplinas\Adicionar.aspx.cs">
+      <DependentUpon>Adicionar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Disciplinas\Adicionar.aspx.designer.cs">
       <DependentUpon>Adicionar.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
@@ -120,7 +128,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\Disciplinas\" />
     <Folder Include="Admin\Notas\" />
     <Folder Include="Admin\Utilizadores\" />
     <Folder Include="Aluno\" />

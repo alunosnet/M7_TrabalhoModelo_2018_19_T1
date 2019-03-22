@@ -13,5 +13,33 @@ namespace M7_TrabalhoModelo_t1.Admin.Alunos
         {
 
         }
+
+        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            //if (args.Value.Contains("-") == true)
+            //    args.IsValid = true;
+            //else
+            //    args.IsValid = false;
+            if (args.Value.IndexOf('-') == 4)
+                args.IsValid = true;
+            else
+            {
+                args.IsValid = false;
+                return;
+            }
+            //verificar se antes e depois temos numeros
+            string[] valores = args.Value.Split('-');
+            int n1 = 0, n2 = 0;
+            if(int.TryParse(valores[0],out n1)==false)
+            {
+                args.IsValid = false;
+                return;
+            }
+            if (int.TryParse(valores[1], out n2) == false)
+            {
+                args.IsValid = false;
+                return;
+            }
+        }
     }
 }
