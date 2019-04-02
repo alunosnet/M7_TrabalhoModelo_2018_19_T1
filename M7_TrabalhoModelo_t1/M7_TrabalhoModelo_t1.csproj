@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Alunos\Adicionar.aspx" />
+    <Content Include="Admin\Alunos\Apagar.aspx" />
+    <Content Include="Admin\Alunos\Editar.aspx" />
+    <Content Include="Admin\Alunos\Gerir.aspx" />
     <Content Include="Admin\Disciplinas\Adicionar.aspx" />
     <Content Include="Admin\Disciplinas\Gerir.aspx" />
     <Content Include="App_Data\bd.mdf" />
@@ -96,6 +99,27 @@
     </Compile>
     <Compile Include="Admin\Alunos\Adicionar.aspx.designer.cs">
       <DependentUpon>Adicionar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Alunos\Apagar.aspx.cs">
+      <DependentUpon>Apagar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Alunos\Apagar.aspx.designer.cs">
+      <DependentUpon>Apagar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Alunos\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Alunos\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Alunos\Gerir.aspx.cs">
+      <DependentUpon>Gerir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Alunos\Gerir.aspx.designer.cs">
+      <DependentUpon>Gerir.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Disciplinas\Adicionar.aspx.cs">
       <DependentUpon>Adicionar.aspx</DependentUpon>
