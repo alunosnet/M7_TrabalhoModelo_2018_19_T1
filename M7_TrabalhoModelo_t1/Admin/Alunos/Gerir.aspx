@@ -13,6 +13,7 @@
             <asp:BoundField DataField="data_nascimento" HeaderText="data_nascimento" SortExpression="data_nascimento"></asp:BoundField>
             <asp:BoundField DataField="genero" HeaderText="genero" SortExpression="genero"></asp:BoundField>
             <asp:HyperLinkField DataNavigateUrlFields="nprocesso" DataNavigateUrlFormatString="Editar.aspx?id={0}" Text="Editar" HeaderText="Editar"></asp:HyperLinkField>
+            <asp:HyperLinkField DataNavigateUrlFields="nprocesso" DataNavigateUrlFormatString="Apagar.aspx?id={0}" Text="Apagar" HeaderText="Apagar"></asp:HyperLinkField>
         </Columns>
     </asp:GridView>
     <asp:SqlDataSource runat="server" ID="SqlAlunos" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [alunos] WHERE ([nome] LIKE '%' + @nome + '%')">
