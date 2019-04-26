@@ -11,7 +11,12 @@ namespace M7_TrabalhoModelo_t1.Admin.Alunos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //verificar se tem sessão iniciada?
+            if (Session["perfil"] == null)
+                Response.Redirect("~/index.aspx");
+            //verificar se é admin?
+            if (Session["perfil"].Equals("0") == false)
+                Response.Redirect("~/index.aspx");
         }
 
         protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)

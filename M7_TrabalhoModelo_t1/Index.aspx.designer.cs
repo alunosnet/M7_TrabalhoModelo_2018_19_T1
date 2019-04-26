@@ -67,6 +67,15 @@ namespace M7_TrabalhoModelo_t1 {
         protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
         
         /// <summary>
+        /// SqlLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlLogin;
+        
+        /// <summary>
         /// divCursos control.
         /// </summary>
         /// <remarks>
@@ -76,6 +85,24 @@ namespace M7_TrabalhoModelo_t1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divCursos;
         
         /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
+        
+        /// <summary>
+        /// SqlCursos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlCursos;
+        
+        /// <summary>
         /// divDisciplinas control.
         /// </summary>
         /// <remarks>
@@ -83,5 +110,23 @@ namespace M7_TrabalhoModelo_t1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divDisciplinas;
+        
+        /// <summary>
+        /// ListView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListView1;
+        
+        /// <summary>
+        /// SqlDisciplinas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDisciplinas;
     }
 }

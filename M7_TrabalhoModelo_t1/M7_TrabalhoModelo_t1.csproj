@@ -73,7 +73,10 @@
     <Content Include="Admin\Alunos\Gerir.aspx" />
     <Content Include="Admin\Disciplinas\Adicionar.aspx" />
     <Content Include="Admin\Disciplinas\Gerir.aspx" />
+    <Content Include="Admin\Notas\adicionar.aspx" />
     <Content Include="Admin\Utilizadores\Adicionar.aspx" />
+    <Content Include="Aluno\notas_aluno.aspx" />
+    <Content Include="Aluno\perfil_aluno.aspx" />
     <Content Include="App_Data\bd.mdf" />
     <Content Include="App_Data\bd_log.ldf">
       <DependentUpon>bd.mdf</DependentUpon>
@@ -85,6 +88,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\mycss.css" />
+    <Content Include="detalhes_curso.aspx" />
     <Content Include="erros.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="js\bootstrap.js" />
@@ -138,12 +142,40 @@
     <Compile Include="Admin\Disciplinas\Gerir.aspx.designer.cs">
       <DependentUpon>Gerir.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Notas\adicionar.aspx.cs">
+      <DependentUpon>adicionar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Notas\adicionar.aspx.designer.cs">
+      <DependentUpon>adicionar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Utilizadores\Adicionar.aspx.cs">
       <DependentUpon>Adicionar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\Utilizadores\Adicionar.aspx.designer.cs">
       <DependentUpon>Adicionar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aluno\notas_aluno.aspx.cs">
+      <DependentUpon>notas_aluno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aluno\notas_aluno.aspx.designer.cs">
+      <DependentUpon>notas_aluno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aluno\perfil_aluno.aspx.cs">
+      <DependentUpon>perfil_aluno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aluno\perfil_aluno.aspx.designer.cs">
+      <DependentUpon>perfil_aluno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detalhes_curso.aspx.cs">
+      <DependentUpon>detalhes_curso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detalhes_curso.aspx.designer.cs">
+      <DependentUpon>detalhes_curso.aspx</DependentUpon>
     </Compile>
     <Compile Include="erros.aspx.cs">
       <DependentUpon>erros.aspx</DependentUpon>
@@ -191,10 +223,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Admin\Notas\" />
-    <Folder Include="Aluno\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

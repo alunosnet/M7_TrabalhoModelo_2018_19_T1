@@ -5,17 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace M7_TrabalhoModelo_t1.Admin.Alunos
+namespace M7_TrabalhoModelo_t1.Aluno
 {
-    public partial class Apagar : System.Web.UI.Page
+    public partial class perfil_aluno : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             //verificar se tem sessão iniciada?
             if (Session["perfil"] == null)
                 Response.Redirect("~/index.aspx");
-            //verificar se é admin?
-            if (Session["perfil"].Equals("0") == false)
+            //verificar se é aluno?
+            if (Session["perfil"].Equals("1") == false)
                 Response.Redirect("~/index.aspx");
         }
     }

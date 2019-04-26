@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.aspx">Home</a>
+                    <a class="nav-link" href="/index.aspx">Home</a>
                 </li>
                 <!--Menu do administrador-->
                 <% if (Session["perfil"] != null && Session["perfil"].Equals("0"))
@@ -29,9 +29,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alunos</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="adicionar_aluno.aspx">Adicionar</a>
-                        <a class="dropdown-item" href="gerir_aluno.aspx">Gerir</a>
-                        <a class="dropdown-item" href="pesquisar_aluno.aspx">Pesquisar</a>
+                        <a class="dropdown-item" href="/Admin/Alunos/Adicionar.aspx">Adicionar</a>
+                        <a class="dropdown-item" href="/Admin/Alunos/Gerir.aspx">Gerir</a>
+                        <a class="dropdown-item" href="/Admin/Alunos/pesquisar.aspx">Pesquisar</a>
                     </div>
                 </li>
                 <!--Alunos-->
@@ -39,9 +39,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Disciplinas</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown02">
-                        <a class="dropdown-item" href="adicionar_disciplina.aspx">Adicionar</a>
-                        <a class="dropdown-item" href="gerir_disciplina.aspx">Gerir</a>
-                        <a class="dropdown-item" href="pesquisar_disciplina.aspx">Pesquisar</a>
+                        <a class="dropdown-item" href="/Admin/Disciplinas/adicionar.aspx">Adicionar</a>
+                        <a class="dropdown-item" href="/Admin/Disciplinas/gerir.aspx">Gerir</a>
+                        <a class="dropdown-item" href="/Admin/Disciplinas/pesquisar.aspx">Pesquisar</a>
                     </div>
                 </li>
                 <!--Disciplinas-->
@@ -49,9 +49,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notas</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown03">
-                        <a class="dropdown-item" href="adicionar_nota.aspx">Adicionar</a>
-                        <a class="dropdown-item" href="gerir_nota.aspx">Gerir</a>
-                        <a class="dropdown-item" href="pesquisar_nota.aspx">Pesquisar</a>
+                        <a class="dropdown-item" href="/Admin/Notas/adicionar.aspx">Adicionar</a>
+                        <a class="dropdown-item" href="/Admin/Notas/gerir.aspx">Gerir</a>
+                        <a class="dropdown-item" href="/Admin/Notas/pesquisar.aspx">Pesquisar</a>
                     </div>
                 </li>
                 <!--Notas-->
@@ -59,12 +59,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilizadores</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="adicionar_utilizador.aspx">Adicionar</a>
-                        <a class="dropdown-item" href="gerir_utilizador.aspx">Gerir</a>
-                        <a class="dropdown-item" href="pesquisar_utilizador.aspx">Pesquisar</a>
+                        <a class="dropdown-item" href="/Admin/Utilizadores/adicionar.aspx">Adicionar</a>
+                        <a class="dropdown-item" href="/Admin/Utilizadores/gerir.aspx">Gerir</a>
+                        <a class="dropdown-item" href="/Admin/Utilizadores/pesquisar.aspx">Pesquisar</a>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="logout.aspx">Terminar sessão</a></li>
                 <!--Utilizadores-->
                 <!--Consultas-->
                 <li class="nav-item dropdown">
@@ -73,7 +72,7 @@
                         <a class="dropdown-item" href="/Admin/Consultas/Grafico.aspx">Gráfico</a>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="logout.aspx">Terminar sessão</a></li>
+                <li class="nav-item"><a class="nav-link" href="/logout.aspx">Terminar sessão</a></li>
                 <!--Consultas-->
                 <!--Menu do administrador-->
                 <%} %>

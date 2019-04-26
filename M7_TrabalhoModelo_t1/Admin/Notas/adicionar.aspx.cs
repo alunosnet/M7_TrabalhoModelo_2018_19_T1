@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace M7_TrabalhoModelo_t1.Admin.Alunos
+namespace M7_TrabalhoModelo_t1.Admin.Notas
 {
-    public partial class Apagar : System.Web.UI.Page
+    public partial class adicionar : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,6 +17,7 @@ namespace M7_TrabalhoModelo_t1.Admin.Alunos
             //verificar se é admin?
             if (Session["perfil"].Equals("0") == false)
                 Response.Redirect("~/index.aspx");
+
         }
     }
 }
